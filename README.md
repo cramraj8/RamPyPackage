@@ -35,17 +35,29 @@ ______________________
 Hints :-
 
 1. __all__ declaration is not necessary.
+
 2. __init__.py should be there to import all necessary modules when
 installing the package.
+
 3. for importing the sub directories (not files),
+    ```python
     from . import subdir1
+    ```
         is enough
+        
 4. for importing the sub file(module),
+    ```python
     from .sub_module import sub_module
+    ```
         is better, if the sub_module is a class on the sub module file.
+        
 5. no need to start the importing of the sub-modules in our current script
    by starting from top package name.
+        ```python
         from Top_package.sub1.sub12 import sub12
+        ```
             This is not necessary to include Top_package at the front.
             Just the below line is enough.
+                ```python
                 from sub1.sub12 import sub12
+                ```

@@ -1,6 +1,6 @@
 
 import sys
-
+print(2)
 
 class intermediate_2_from_subdir1:
 
